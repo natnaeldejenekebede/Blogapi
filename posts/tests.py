@@ -10,10 +10,11 @@ class BlogTests(TestCase):
             username="testuser",
             email="test@email.com",
             password="secret",
+            
  )
         cls.post = Post.objects.create(
             author=cls.user,
-            title="A good title",
+            title=" Have a good title",
             body="Nice body content",
  )
     def test_post_model(self):
